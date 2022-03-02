@@ -1,5 +1,0 @@
-learn about window controls 
-and add a condition so that it saves my previous window controls
-
-length starts with 1
-index starts with 0
