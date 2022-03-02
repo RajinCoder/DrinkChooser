@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Window Controls</title>
+</head>
+
+<body>
+    <div>
+    <form id="drinkForm" action="index.html" method="get">
+        <h1>Drink Chooser</h1>
+        <label for="nameInput">Name: </label>
+        <input type="text" placeholder="Enter your name" id="nameInput" size="15">
+        <br>
+        <label>Types of Drink:</label>
+        <br>
+        <input type="radio" name="typeDrink" id="juice" value="juice">
+        <label for="juice">- Juice</label>
+        <br>
+        <input type="radio" name="typeDrink" id="soft" value="soft">
+        <label for="soft">- Soft Drinks</label>
+        <br>
+        <input type="radio" name="typeDrink" id="energy" value="energy">
+        <label for="energy">- Energy Drinks</label>
+        <br>
+        <input type="radio" name="typeDrink" id="alcohol" value="alcohol">
+        <label for="alcohol">- Alcoholic Drinks</label>
+        <br>
+        <label for="ageRange">Age: </label>
+        <input type="range" min="1" max="100" value="17" name="age" id="ageRange">
+        <label for="ageRange" id="changeAge">-</label>
+        <br>
+        <input type="submit" value="Submit" id="submitButton" onclick="yourChoice(event)">
+        <br>
+        <p id="displayDrink"><br></p>
+    </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
